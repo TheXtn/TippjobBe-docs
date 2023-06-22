@@ -1,0 +1,1539 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>server documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">server documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content controller">
+                   <div class="content-data">
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Controllers</li>
+  <li class="breadcrumb-item" >PostController</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/post/post.controller.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Prefix</h3>
+            </p>
+            <p class="comment">
+                <code>post</code>
+            </p>
+
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                <a href="#addImage" >addImage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                <a href="#bookmarkPost" >bookmarkPost</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                <a href="#create" >create</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                <a href="#deleteBookmark" >deleteBookmark</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                <a href="#findAllUserPosts" >findAllUserPosts</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                <a href="#getAllPosts" >getAllPosts</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                <a href="#getBookmarks" >getBookmarks</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getFilteredPosts" >getFilteredPosts</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getPost" >getPost</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                <a href="#remove" >remove</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                <a href="#update" >update</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addImage"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span ><b>addImage</b></span>
+                        <a href="#addImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addImage(file: Express.Multer.File, user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBearerAuth(&#x27;JWT-auth&#x27;)<br />@UseGuards(undefined)<br />@ApiOkResponse({type: Image})<br />@HttpCode(200)<br />@ApiImageFile(&#x27;image&#x27;)<br />@Post(&#x27;/addImage&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/post/post.controller.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file</td>
+                                    <td>
+                                            <code>Express.Multer.File</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an uploaded image of a post</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bookmarkPost"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span ><b>bookmarkPost</b></span>
+                        <a href="#bookmarkPost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>bookmarkPost(user: <a href="../classes/User.html" target="_self">User</a>, bookmarkDto: <a href="../classes/BookmarkDto.html" target="_self">BookmarkDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBearerAuth(&#x27;JWT-auth&#x27;)<br />@UseGuards(undefined)<br />@HttpCode(200)<br />@ApiOkResponse({type: Bookmarks})<br />@Post(&#x27;/bookmark&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/post/post.controller.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bookmarkDto</td>
+                                    <td>
+                                                <code><a href="../classes/BookmarkDto.html" target="_self" >BookmarkDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Bookmark a post for user</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="create"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span ><b>create</b></span>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>create(createPostDto: <a href="../classes/CreatePostDto.html" target="_self">CreatePostDto</a>, user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBearerAuth(&#x27;JWT-auth&#x27;)<br />@UseGuards(undefined)<br />@HttpCode(200)<br />@ApiOkResponse({type: PostClass})<br />@Post()<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/post/post.controller.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>createPostDto</td>
+                                    <td>
+                                                <code><a href="../classes/CreatePostDto.html" target="_self" >CreatePostDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteBookmark"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span ><b>deleteBookmark</b></span>
+                        <a href="#deleteBookmark"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteBookmark(user: <a href="../classes/User.html" target="_self">User</a>, bookmarkDto: <a href="../classes/BookmarkDto.html" target="_self">BookmarkDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBearerAuth(&#x27;JWT-auth&#x27;)<br />@UseGuards(undefined)<br />@HttpCode(200)<br />@ApiOkResponse({type: Bookmarks})<br />@Delete(&#x27;/bookmark&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">src/post/post.controller.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bookmarkDto</td>
+                                    <td>
+                                                <code><a href="../classes/BookmarkDto.html" target="_self" >BookmarkDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>a deleted bookmark object</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAllUserPosts"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span ><b>findAllUserPosts</b></span>
+                        <a href="#findAllUserPosts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findAllUserPosts(user: <a href="../classes/User.html" target="_self">User</a>, selectPostsDto: <a href="../classes/SelectPostsDto.html" target="_self">SelectPostsDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBearerAuth(&#x27;JWT-auth&#x27;)<br />@UseGuards(undefined)<br />@HttpCode(200)<br />@ApiOkResponse({type: GetPostsResponse})<br />@Get()<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/post/post.controller.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>selectPostsDto</td>
+                                    <td>
+                                                <code><a href="../classes/SelectPostsDto.html" target="_self" >SelectPostsDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllPosts"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span ><b>getAllPosts</b></span>
+                        <a href="#getAllPosts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllPosts(selectAllPostsDto: <a href="../classes/SelectAllPostsDto.html" target="_self">SelectAllPostsDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@HttpCode(200)<br />@ApiOkResponse({type: GetPostsResponse})<br />@Get(&#x27;/allposts&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/post/post.controller.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectAllPostsDto</td>
+                                    <td>
+                                                <code><a href="../classes/SelectAllPostsDto.html" target="_self" >SelectAllPostsDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>all posts</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBookmarks"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span ><b>getBookmarks</b></span>
+                        <a href="#getBookmarks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBookmarks(user: <a href="../classes/User.html" target="_self">User</a>, paginationDto: <a href="../classes/PaginationDto.html" target="_self">PaginationDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBearerAuth(&#x27;JWT-auth&#x27;)<br />@UseGuards(undefined)<br />@HttpCode(200)<br />@ApiOkResponse({type: GetBookmarksResponse})<br />@Get(&#x27;/getBookmarks&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/post/post.controller.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>paginationDto</td>
+                                    <td>
+                                                <code><a href="../classes/PaginationDto.html" target="_self" >PaginationDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>All current user bookmarks</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFilteredPosts"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getFilteredPosts</b></span>
+                        <a href="#getFilteredPosts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getFilteredPosts(searchQuery: <a href="../classes/SearchQueryDto.html" target="_self">SearchQueryDto</a>, filterDto: <a href="../classes/PostFilterDto.html" target="_self">PostFilterDto</a>, paginationDto: <a href="../classes/PaginationDto.html" target="_self">PaginationDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@HttpCode(200)<br />@ApiOkResponse({type: GetPostsResponse})<br />@Get(&#x27;filtered&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/post/post.controller.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>searchQuery</td>
+                                    <td>
+                                                <code><a href="../classes/SearchQueryDto.html" target="_self" >SearchQueryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filterDto</td>
+                                    <td>
+                                                <code><a href="../classes/PostFilterDto.html" target="_self" >PostFilterDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>paginationDto</td>
+                                    <td>
+                                                <code><a href="../classes/PaginationDto.html" target="_self" >PaginationDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an array of Filtred posts</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPost"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getPost</b></span>
+                        <a href="#getPost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPost(getPostDto: <a href="../classes/GetPostDto.html" target="_self">GetPostDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBearerAuth(&#x27;JWT-auth&#x27;)<br />@UseGuards(undefined)<br />@HttpCode(200)<br />@ApiOkResponse({type: PostClass})<br />@Get(&#x27;:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/post/post.controller.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>getPostDto</td>
+                                    <td>
+                                                <code><a href="../classes/GetPostDto.html" target="_self" >GetPostDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="remove"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span ><b>remove</b></span>
+                        <a href="#remove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>remove(getPostDto: <a href="../classes/GetPostDto.html" target="_self">GetPostDto</a>, user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBearerAuth(&#x27;JWT-auth&#x27;)<br />@UseGuards(undefined)<br />@HttpCode(200)<br />@ApiOkResponse({type: PostClass})<br />@Delete(&#x27;:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="220"
+                            class="link-to-prism">src/post/post.controller.ts:220</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>getPostDto</td>
+                                    <td>
+                                                <code><a href="../classes/GetPostDto.html" target="_self" >GetPostDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="update"></a>
+                    <span class="name">
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span class="modifier"></span>
+                        <span ><b>update</b></span>
+                        <a href="#update"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>update(getPostDto: <a href="../classes/GetPostDto.html" target="_self">GetPostDto</a>, updatePostDto: <a href="../classes/UpdatePostDto.html" target="_self">UpdatePostDto</a>, user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBearerAuth(&#x27;JWT-auth&#x27;)<br />@UseGuards(undefined)<br />@HttpCode(200)<br />@ApiOkResponse({type: PostClass})<br />@Patch(&#x27;:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="205"
+                            class="link-to-prism">src/post/post.controller.ts:205</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>getPostDto</td>
+                                    <td>
+                                                <code><a href="../classes/GetPostDto.html" target="_self" >GetPostDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>updatePostDto</td>
+                                    <td>
+                                                <code><a href="../classes/UpdatePostDto.html" target="_self" >UpdatePostDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  UseGuards,
+  HttpCode,
+  Query,
+  UploadedFile,
+} from &#x27;@nestjs/common&#x27;;
+import { PostService } from &#x27;./post.service&#x27;;
+import { CreatePostDto } from &#x27;./dto/create-post.dto&#x27;;
+import { UpdatePostDto } from &#x27;./dto/update-post.dto&#x27;;
+import { ApiBearerAuth, ApiOkResponse, ApiTags } from &#x27;@nestjs/swagger&#x27;;
+import { AuthGuard } from &#x27;@nestjs/passport&#x27;;
+import { CurrentUser } from &#x27;../auth/decorators/current-user.decorator&#x27;;
+import { User } from &#x27;@prisma/client&#x27;;
+import { Post as PostClass } from &#x27;../_gen/prisma-class/post&#x27;;
+import { PaginationDto } from &#x27;../profile/dto/pagination.dto&#x27;;
+import { ApiImageFile } from &#x27;../profile/decorators/api-file-decorator&#x27;;
+import { Image } from &#x27;../_gen/prisma-class/image&#x27;;
+import { SelectPostsDto } from &#x27;./dto/select-post.dto&#x27;;
+import { SelectAllPostsDto } from &#x27;./dto/select-all-posts.dto&#x27;;
+import { Bookmarks } from &#x27;../_gen/prisma-class/bookmarks&#x27;;
+import { BookmarkDto } from &#x27;./dto/bookmark.dto&#x27;;
+import { PostFilterDto } from &#x27;./dto/post-filter.dto&#x27;;
+import { GetPostDto } from &#x27;./dto/get-post.dto&#x27;;
+import { GetPostsResponse } from &#x27;./entities/getPostsResponse&#x27;;
+import { GetBookmarksResponse } from &#x27;./entities/getBookmarksResponse&#x27;;
+import { SearchQueryDto } from &#x27;./dto/create-search.dto&#x27;;
+
+@ApiTags(&#x27;Posts&#x27;)
+@Controller(&#x27;post&#x27;)
+export class PostController {
+  constructor(private readonly postService: PostService) {}
+
+  @ApiBearerAuth(&#x27;JWT-auth&#x27;)
+  @UseGuards(AuthGuard(&#x27;jwt&#x27;))
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: PostClass,
+  })
+  @Post()
+  create(@Body() createPostDto: CreatePostDto, @CurrentUser() user: User) {
+    return this.postService.create(createPostDto, user);
+  }
+  @ApiBearerAuth(&#x27;JWT-auth&#x27;)
+  @UseGuards(AuthGuard(&#x27;jwt&#x27;))
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: GetPostsResponse,
+  })
+  /**
+   * Return All current user posts
+   */
+  @Get()
+  findAllUserPosts(
+    @CurrentUser() user: User,
+    @Query() selectPostsDto: SelectPostsDto,
+  ) {
+    return this.postService.findAllUserPosts(
+      user,
+      selectPostsDto.userId,
+      selectPostsDto.type,
+      selectPostsDto.priority,
+      selectPostsDto.take &amp;&amp; +selectPostsDto.take,
+      selectPostsDto.skip &amp;&amp; +selectPostsDto.skip,
+    );
+  }
+  /**
+   * @return an uploaded image of a post
+   */
+  @ApiBearerAuth(&#x27;JWT-auth&#x27;)
+  @UseGuards(AuthGuard(&#x27;jwt&#x27;))
+  @ApiOkResponse({ type: Image })
+  @HttpCode(200)
+  @ApiImageFile(&#x27;image&#x27;)
+  @Post(&#x27;/addImage&#x27;)
+  addImage(
+    @UploadedFile()
+    file: Express.Multer.File,
+    @CurrentUser() user: User,
+  ): any {
+    return this.postService.addImage(file, user);
+  }
+  /**
+   *
+   * @param selectAllPostsDto
+   * @returns all posts
+   */
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: GetPostsResponse,
+  })
+  @Get(&#x27;/allposts&#x27;)
+  getAllPosts(@Query() selectAllPostsDto: SelectAllPostsDto) {
+    return this.postService.getAllPosts(
+      selectAllPostsDto.type,
+      selectAllPostsDto.priority,
+      selectAllPostsDto.take &amp;&amp; +selectAllPostsDto.take,
+      selectAllPostsDto.skip &amp;&amp; +selectAllPostsDto.skip,
+    );
+  }
+  /**
+   *
+   * @param user
+   * @param bookmarkDto
+   * @returns Bookmark a post for user
+   */
+  @ApiBearerAuth(&#x27;JWT-auth&#x27;)
+  @UseGuards(AuthGuard(&#x27;jwt&#x27;))
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: Bookmarks,
+  })
+  @Post(&#x27;/bookmark&#x27;)
+  bookmarkPost(@CurrentUser() user: User, @Body() bookmarkDto: BookmarkDto) {
+    return this.postService.bookmarkPost(user, bookmarkDto);
+  }
+  /**
+   *
+   * @param user
+   * @param paginationDto
+   * @returns All current user bookmarks
+   */
+  @ApiBearerAuth(&#x27;JWT-auth&#x27;)
+  @UseGuards(AuthGuard(&#x27;jwt&#x27;))
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: GetBookmarksResponse,
+  })
+  @Get(&#x27;/getBookmarks&#x27;)
+  getBookmarks(
+    @CurrentUser() user: User,
+    @Query() paginationDto: PaginationDto,
+  ) {
+    return this.postService.getBookmarks(
+      user,
+      paginationDto.take &amp;&amp; +paginationDto.take,
+      paginationDto.skip &amp;&amp; +paginationDto.skip,
+    );
+  }
+  /**
+   *
+   * @param user
+   * @param bookmarkDto
+   * @returns a deleted bookmark object
+   */
+  @ApiBearerAuth(&#x27;JWT-auth&#x27;)
+  @UseGuards(AuthGuard(&#x27;jwt&#x27;))
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: Bookmarks,
+  })
+  @Delete(&#x27;/bookmark&#x27;)
+  deleteBookmark(@CurrentUser() user: User, @Body() bookmarkDto: BookmarkDto) {
+    return this.postService.deleteBookmark(user, bookmarkDto);
+  }
+  /**
+   *
+   * @param filterDto
+   * @returns an array of Filtred posts
+   */
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: GetPostsResponse,
+  })
+  @Get(&#x27;filtered&#x27;)
+  async getFilteredPosts(
+    @Query() searchQuery: SearchQueryDto,
+    @Query() filterDto: PostFilterDto,
+    @Query() paginationDto: PaginationDto,
+  ) {
+    return await this.postService.findFilteredPosts(
+      searchQuery,
+      filterDto,
+      paginationDto.take &amp;&amp; +paginationDto.take,
+      paginationDto.skip &amp;&amp; +paginationDto.skip,
+    );
+  }
+  @ApiBearerAuth(&#x27;JWT-auth&#x27;)
+  @UseGuards(AuthGuard(&#x27;jwt&#x27;))
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: PostClass,
+  })
+  /***
+   * Return a post by id
+   */
+  @Get(&#x27;:id&#x27;)
+  async getPost(@Param() getPostDto: GetPostDto) {
+    return this.postService.findOne(getPostDto.id);
+  }
+
+  @ApiBearerAuth(&#x27;JWT-auth&#x27;)
+  @UseGuards(AuthGuard(&#x27;jwt&#x27;))
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: PostClass,
+  })
+  @Patch(&#x27;:id&#x27;)
+  update(
+    @Param() getPostDto: GetPostDto,
+    @Body() updatePostDto: UpdatePostDto,
+    @CurrentUser() user: User,
+  ) {
+    return this.postService.update(user, getPostDto.id, updatePostDto);
+  }
+
+  @ApiBearerAuth(&#x27;JWT-auth&#x27;)
+  @UseGuards(AuthGuard(&#x27;jwt&#x27;))
+  @HttpCode(200)
+  @ApiOkResponse({
+    type: PostClass,
+  })
+  @Delete(&#x27;:id&#x27;)
+  remove(@Param() getPostDto: GetPostDto, @CurrentUser() user: User) {
+    return this.postService.remove(user, getPostDto.id);
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'controller';
+            var COMPODOC_CURRENT_PAGE_URL = 'PostController.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

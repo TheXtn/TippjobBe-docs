@@ -1,0 +1,769 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>server documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">server documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >PayementService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/payement/payement.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#stripe" >stripe</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#create" >create</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getProducts" >getProducts</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updatePostPayement" >updatePostPayement</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#webhook" >webhook</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(prisma: <a href="../injectables/PrismaService.html" target="_self">PrismaService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/payement/payement.service.ts:10</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>prisma</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PrismaService.html" target="_self" >PrismaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="create"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>create</b></span>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>create(createPayementDto: <a href="../classes/CreatePayementDto.html" target="_self">CreatePayementDto</a>, user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/payement/payement.service.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>createPayementDto</td>
+                                    <td>
+                                                <code><a href="../classes/CreatePayementDto.html" target="_self" >CreatePayementDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Payment session : generated url for payment that redirect to the front end</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProducts"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getProducts</b></span>
+                        <a href="#getProducts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getProducts()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">src/payement/payement.service.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>all products in stripe</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updatePostPayement"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updatePostPayement</b></span>
+                        <a href="#updatePostPayement"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updatePostPayement(postId?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, productId?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, userId?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/payement/payement.service.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function triggered on the webhook of success payment</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>postId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>productId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>An updated post object</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="webhook"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>webhook</b></span>
+                        <a href="#webhook"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>webhook(request: RawBodyRequest<Request>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="116"
+                            class="link-to-prism">src/payement/payement.service.ts:116</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+                                    <td>
+                                            <code>RawBodyRequest&lt;Request&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Nothing it justs the webhook endpoint that trigger on success payment</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stripe"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>stripe</b></span>
+                        <a href="#stripe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/payement/payement.service.ts:10</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpException, Injectable, RawBodyRequest } from &#x27;@nestjs/common&#x27;;
+import { CreatePayementDto } from &#x27;./dto/create-payement.dto&#x27;;
+import Stripe from &#x27;stripe&#x27;;
+import { Request } from &#x27;express&#x27;;
+import { User } from &#x27;../_gen/prisma-class/user&#x27;;
+import { PrismaService } from &#x27;../prisma/prisma.service&#x27;;
+import { addHours } from &#x27;date-fns&#x27;;
+@Injectable()
+export class PayementService {
+  private stripe;
+
+  constructor(private readonly prisma: PrismaService) {
+    this.stripe &#x3D; new Stripe(process.env.STRIPE_KEY || &#x27;&#x27;, {
+      apiVersion: &#x27;2022-11-15&#x27;,
+    });
+  }
+
+  /**
+   *
+   * @param createPayementDto
+   * @param user
+   * @returns Payment session : generated url for payment that redirect to the front end
+   */
+  async create(createPayementDto: CreatePayementDto, user: User) {
+    const userEmail &#x3D; await this.prisma.user.findUnique({
+      where: {
+        id: user.id,
+      },
+      select: {
+        email: true,
+      },
+    });
+    /**
+     * Creating a session ( including creation of stripe account based on the user email)
+     */
+    const item &#x3D; await this.stripe.prices.retrieve(
+      createPayementDto.productPriceId,
+    );
+    if (item.unit_amount &#x3D;&#x3D; 0) {
+      await this.updatePostPayement(
+        createPayementDto.postId,
+        createPayementDto.productPriceId,
+        user.id,
+      );
+      throw new HttpException(
+        &#x27;Amount is 0 so its updated without payement&#x27;,
+        201,
+      );
+    }
+    const session &#x3D; await this.stripe.checkout.sessions.create({
+      customer_email: userEmail?.email,
+      line_items: [
+        {
+          // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
+          price: createPayementDto.productPriceId,
+          quantity: 1,
+        },
+      ],
+      metadata: {
+        userId: user.id,
+        postId: createPayementDto.postId,
+        productId: createPayementDto.productPriceId,
+      },
+      mode: &#x27;payment&#x27;,
+      payment_method_types: [&#x27;card&#x27;],
+      success_url:
+        &#x60;${process.env.STRIPE_SUCCESS_PAYEMENT_URL}?tab&#x3D;advert&amp;payment&#x3D;success&#x60; ||
+        &#x27;&#x27;,
+      cancel_url: &#x60;${process.env.STRIPE_SUCCESS_PAYEMENT_URL}?tab&#x3D;advert&amp;payment&#x3D;error&#x60;,
+    });
+    console.log(session);
+    return session;
+  }
+  /**
+   * This function triggered on the webhook of success payment
+   * @param postId
+   * @param productId
+   * @param userId
+   * @returns An updated post object
+   */
+  async updatePostPayement(
+    postId?: string,
+    productId?: string,
+    userId?: string,
+  ) {
+    const price &#x3D; (await this.stripe.prices.retrieve(productId || &#x27;&#x27;, {
+      expand: [&#x27;product&#x27;],
+    })) as Stripe.Price &amp; { product: Stripe.Product };
+    console.log(&#x27;Postid&#x3D;&#x27;, postId);
+    console.log(&#x27;Period&#x3D;&#x27;, +price.product.metadata[&#x27;period&#x27;]);
+    const post &#x3D; await this.prisma.post.findUnique({
+      where: {
+        id: postId,
+      },
+    });
+    const newExpirationDate &#x3D; addHours(
+      new Date(),
+      +price.product.metadata[&#x27;period&#x27;],
+    );
+    const updatedPost &#x3D; await this.prisma.post.updateMany({
+      where: {
+        id: post?.id,
+        userId,
+      },
+      data: {
+        expirationDate: newExpirationDate,
+      },
+    });
+    return updatedPost;
+  }
+  /**
+   *
+   * @param request
+   * @returns Nothing it justs the webhook endpoint that trigger on success payment
+   */
+  async webhook(request: RawBodyRequest&lt;Request&gt;) {
+    // checkout-session.type.ts
+
+    type CheckoutSession &#x3D; {
+      id: string;
+      object: &#x27;checkout.session&#x27;;
+      billing_address_collection?: &#x27;auto&#x27; | &#x27;required&#x27;;
+      cancel_url: string;
+      client_reference_id?: string;
+      customer?: string;
+      customer_email?: string;
+      line_items: Stripe.LineItem[];
+      locale?: string;
+      mode: &#x27;payment&#x27; | &#x27;setup&#x27; | &#x27;subscription&#x27; | &#x27;subscription_update&#x27;;
+      payment_intent?: string;
+      payment_method_types: string[];
+      payment_status?: &#x27;paid&#x27; | &#x27;unpaid&#x27;;
+      setup_intent?: string;
+      shipping_address_collection?: {
+        allowed_countries: string[];
+      };
+      submit_type?: &#x27;auto&#x27; | &#x27;book&#x27; | &#x27;donate&#x27; | &#x27;pay&#x27;;
+      subscription?: string;
+      success_url: string;
+      metadata?: {
+        [key: string]: string;
+      };
+    };
+
+    const endpointSecret &#x3D; process.env.STRIPE_WEBHOOK_SECRET || &#x27;&#x27;;
+    let event;
+
+    try {
+      const sig &#x3D; request.headers[&#x27;stripe-signature&#x27;] || &#x27;&#x27;;
+      const rawBody &#x3D; request.rawBody || &#x27;&#x27;; // Assuming you have access to the raw request body
+      event &#x3D; this.stripe.webhooks.constructEvent(rawBody, sig, endpointSecret);
+    } catch (e) {}
+    switch (event?.type) {
+      case &#x27;checkout.session.completed&#x27;:
+        const checkoutSession &#x3D; event.data.object as CheckoutSession;
+        if (checkoutSession.payment_status &#x3D;&#x3D; &#x27;paid&#x27;) {
+          await this.updatePostPayement(
+            checkoutSession.metadata &amp;&amp; checkoutSession.metadata[&#x27;postId&#x27;],
+            checkoutSession.metadata &amp;&amp; checkoutSession.metadata[&#x27;productId&#x27;],
+            checkoutSession.metadata &amp;&amp; checkoutSession.metadata[&#x27;userId&#x27;],
+          );
+        }
+        break;
+      default:
+        console.log(&#x60;Unhandled event type ${event?.type}&#x60;);
+    }
+    return &#x60;This action returns nothing&#x60;;
+  }
+  /**
+   *
+   * @returns all products in stripe
+   */
+  async getProducts() {
+    return this.stripe.products.list({
+      active: true,
+    });
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'PayementService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

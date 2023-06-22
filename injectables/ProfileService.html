@@ -1,0 +1,2056 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>server documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">server documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >ProfileService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/profile/profile.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#bookmarkProfile" >bookmarkProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteUser" >deleteUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteUserGallery" >deleteUserGallery</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getBookmarkedProfiles" >getBookmarkedProfiles</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getProFocus" >getProFocus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserGallery" >getUserGallery</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserGalleryById" >getUserGalleryById</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserResumeById" >getUserResumeById</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserResumes" >getUserResumes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#setProFocus" >setProFocus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#setUserActivity" >setUserActivity</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#setUserBio" >setUserBio</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#setUserTags" >setUserTags</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#uploadGalleryImage" >uploadGalleryImage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#uploadProfileImage" >uploadProfileImage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#uploadResume" >uploadResume</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(prisma: <a href="../injectables/PrismaService.html" target="_self">PrismaService</a>, imagesService: <a href="../injectables/ImagesService.html" target="_self">ImagesService</a>, resumeService: <a href="../injectables/ResumesService.html" target="_self">ResumesService</a>, activityService: <a href="../injectables/ActivitiesService.html" target="_self">ActivitiesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/profile/profile.service.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>prisma</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PrismaService.html" target="_self" >PrismaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>imagesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ImagesService.html" target="_self" >ImagesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>resumeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResumesService.html" target="_self" >ResumesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activityService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ActivitiesService.html" target="_self" >ActivitiesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bookmarkProfile"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>bookmarkProfile</b></span>
+                        <a href="#bookmarkProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>bookmarkProfile(user: <a href="../classes/User.html" target="_self">User</a>, bookmarkProfileDto: <a href="../classes/BookmarkProfileDto.html" target="_self">BookmarkProfileDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="325"
+                            class="link-to-prism">src/profile/profile.service.ts:325</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bookmarkProfileDto</td>
+                                    <td>
+                                                <code><a href="../classes/BookmarkProfileDto.html" target="_self" >BookmarkProfileDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteUser</b></span>
+                        <a href="#deleteUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteUser(user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="314"
+                            class="link-to-prism">src/profile/profile.service.ts:314</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteUserGallery"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteUserGallery</b></span>
+                        <a href="#deleteUserGallery"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteUserGallery(user: <a href="../classes/User.html" target="_self">User</a>, deleteUserGalleryDto: <a href="../classes/DeleteUserGalleryDto.html" target="_self">DeleteUserGalleryDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/profile/profile.service.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>deleteUserGalleryDto</td>
+                                    <td>
+                                                <code><a href="../classes/DeleteUserGalleryDto.html" target="_self" >DeleteUserGalleryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBookmarkedProfiles"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getBookmarkedProfiles</b></span>
+                        <a href="#getBookmarkedProfiles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBookmarkedProfiles(user: <a href="../classes/User.html" target="_self">User</a>, take?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, skip?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="354"
+                            class="link-to-prism">src/profile/profile.service.ts:354</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>take</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>skip</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProFocus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getProFocus</b></span>
+                        <a href="#getProFocus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getProFocus(user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="304"
+                            class="link-to-prism">src/profile/profile.service.ts:304</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserGallery"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserGallery</b></span>
+                        <a href="#getUserGallery"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserGallery(user: <a href="../classes/User.html" target="_self">User</a>, take?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, skip?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/profile/profile.service.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>take</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>skip</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Image[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserGalleryById"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserGalleryById</b></span>
+                        <a href="#getUserGalleryById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserGalleryById(user: <a href="../classes/User.html" target="_self">User</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, take?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, skip?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/profile/profile.service.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>take</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>skip</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;[] | null&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserResumeById"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserResumeById</b></span>
+                        <a href="#getUserResumeById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserResumeById(user: <a href="../classes/User.html" target="_self">User</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/profile/profile.service.ts:174</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;[] | null&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserResumes"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserResumes</b></span>
+                        <a href="#getUserResumes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserResumes(user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">src/profile/profile.service.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Resume[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setProFocus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>setProFocus</b></span>
+                        <a href="#setProFocus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setProFocus(user: <a href="../classes/User.html" target="_self">User</a>, createProFocus: <a href="../classes/CreateProFocusDto.html" target="_self">CreateProFocusDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="282"
+                            class="link-to-prism">src/profile/profile.service.ts:282</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>createProFocus</td>
+                                    <td>
+                                                <code><a href="../classes/CreateProFocusDto.html" target="_self" >CreateProFocusDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;[] | undefined&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUserActivity"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>setUserActivity</b></span>
+                        <a href="#setUserActivity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setUserActivity(user: <a href="../classes/User.html" target="_self">User</a>, CreateActivityDto: <a href="../classes/CreateActivityDto.html" target="_self">CreateActivityDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="213"
+                            class="link-to-prism">src/profile/profile.service.ts:213</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>CreateActivityDto</td>
+                                    <td>
+                                                <code><a href="../classes/CreateActivityDto.html" target="_self" >CreateActivityDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUserBio"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>setUserBio</b></span>
+                        <a href="#setUserBio"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setUserBio(user: <a href="../classes/User.html" target="_self">User</a>, createBioDto: <a href="../classes/CreateBioDto.html" target="_self">CreateBioDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="229"
+                            class="link-to-prism">src/profile/profile.service.ts:229</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>createBioDto</td>
+                                    <td>
+                                                <code><a href="../classes/CreateBioDto.html" target="_self" >CreateBioDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUserTags"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>setUserTags</b></span>
+                        <a href="#setUserTags"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setUserTags(user: <a href="../classes/User.html" target="_self">User</a>, body: <a href="../classes/CreateTagsDto.html" target="_self">CreateTagsDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="249"
+                            class="link-to-prism">src/profile/profile.service.ts:249</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>body</td>
+                                    <td>
+                                                <code><a href="../classes/CreateTagsDto.html" target="_self" >CreateTagsDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadGalleryImage"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>uploadGalleryImage</b></span>
+                        <a href="#uploadGalleryImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>uploadGalleryImage(file: Express.Multer.File, user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/profile/profile.service.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file</td>
+                                    <td>
+                                            <code>Express.Multer.File</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Image&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadProfileImage"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>uploadProfileImage</b></span>
+                        <a href="#uploadProfileImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>uploadProfileImage(file: Express.Multer.File, user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/profile/profile.service.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file</td>
+                                    <td>
+                                            <code>Express.Multer.File</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadResume"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>uploadResume</b></span>
+                        <a href="#uploadResume"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>uploadResume(files: Array<Express.Multer.File>, user: <a href="../classes/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/profile/profile.service.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>files</td>
+                                    <td>
+                                            <code>Array&lt;Express.Multer.File&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Resume[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  BadRequestException,
+  Injectable,
+  UnauthorizedException,
+} from &#x27;@nestjs/common&#x27;;
+import { User, Image, Resume } from &#x27;@prisma/client&#x27;;
+import { PrismaService } from &#x27;../prisma/prisma.service&#x27;;
+import { ImagesService } from &#x27;../images/images.service&#x27;;
+import { ResumesService } from &#x27;../resumes/resumes.service&#x27;;
+import { CreateActivityDto } from &#x27;./dto/create-activity.dto&#x27;;
+import { CreateTagsDto } from &#x27;./dto/create-tags.dto&#x27;;
+import { ActivitiesService } from &#x27;../activities/activities.service&#x27;;
+import { CreateBioDto } from &#x27;./dto/create-bio.dto&#x27;;
+import { CreateProFocusDto } from &#x27;./dto/create-profocus.dto&#x27;;
+import { DeleteUserGalleryDto } from &#x27;./dto/delete-user-gallery.dto&#x27;;
+import { BookmarkProfileDto } from &#x27;./dto/bookmark-profile.dto&#x27;;
+@Injectable()
+export class ProfileService {
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly imagesService: ImagesService,
+    private readonly resumeService: ResumesService,
+    private readonly activityService: ActivitiesService,
+  ) {}
+  //SERVICE TO UPLOAD USER PROFILE IMAGE
+  async uploadProfileImage(file: Express.Multer.File, user: User) {
+    const image &#x3D; await this.imagesService.createImage(file, user, true);
+    //CREATE A PROFILE IF NOT EXIST | UPDATE EXISTING PROFILE -&gt; SET NEW PROFILE IMAGE
+    const profile &#x3D; await this.prisma.profile.upsert({
+      where: {
+        userId: user.id,
+      },
+      update: {
+        profileImage: image.imageUrl,
+      },
+      create: {
+        user: {
+          connect: {
+            id: user.id,
+          },
+        },
+
+        profileImage: image.imageUrl,
+      },
+      include: {
+        user: true,
+      },
+    });
+    return profile;
+  }
+  //SERVICE TO UPLOAD AN IMAGE TO USER IMAGES GALLERY
+  async uploadGalleryImage(
+    file: Express.Multer.File,
+    user: User,
+  ): Promise&lt;Image&gt; {
+    return await this.imagesService.createImage(file, user, false, true);
+  }
+  //SERVICE TO GET ALL USER IMAGES GALLERY
+  async getUserGallery(
+    user: User,
+    take?: number,
+    skip?: number,
+  ): Promise&lt;Image[]&gt; {
+    return await this.imagesService.getUserGallery(user, take, skip);
+  }
+  //SERVICE TO DELETE USER IMAGES GALLERY
+  async deleteUserGallery(
+    user: User,
+    deleteUserGalleryDto: DeleteUserGalleryDto,
+  ) {
+    await this.prisma.image.deleteMany({
+      where: {
+        ownerId: user.id,
+        id: {
+          in: deleteUserGalleryDto.idsArray,
+        },
+      },
+    });
+    return &#x27;Gallery Updated&#x27;;
+  }
+  //SERVICE TO GET USER GALLERY BY USER ID
+  async getUserGalleryById(
+    user: User,
+    id: string,
+    take?: number,
+    skip?: number,
+  ): Promise&lt;Image[] | null&gt; {
+    if (!id) {
+      return null;
+    }
+    //GET THE CURRENT USER (JWT USER)
+    const currentUser &#x3D; await this.prisma.user.findUnique({
+      where: { id: user.id },
+    });
+    //GET THE USER BASE ON THE ID PATH PARAM
+    const dbUser &#x3D; await this.prisma.user.findUnique({
+      where: {
+        id: id,
+      },
+      include: {
+        profile: {
+          include: {
+            activity: true,
+          },
+        },
+      },
+    });
+    if (dbUser) {
+      if (dbUser.visibility &#x3D;&#x3D; &#x27;PUBLIC&#x27;) {
+        return await this.imagesService.getUserGallery(dbUser, take, skip);
+      }
+      if (
+        dbUser.visibility &#x3D;&#x3D; &#x27;COMPANY&#x27; &amp;&amp;
+        currentUser?.userType &#x3D;&#x3D; &#x27;COMPANY&#x27;
+      ) {
+        return await this.imagesService.getUserGallery(dbUser, take, skip);
+      }
+    }
+    return null;
+  }
+  // THIS FUNCTION TAKES IN AN ARRAY OF FILES AND A USER OBJECT, AND RETURNS AN ARRAY OF UPLOADED RESUMES.
+  async uploadResume(
+    files: Array&lt;Express.Multer.File&gt;,
+    user: User,
+  ): Promise&lt;Resume[]&gt; {
+    // INITIALIZE AN EMPTY ARRAY TO STORE UPLOADED RESUMES.
+    const arrayOfUploadedResumes: Resume[] &#x3D; [];
+
+    // LOOP THROUGH EACH FILE IN THE ARRAY OF FILES.
+    for (const file of files) {
+      // CHECK IF THE FILE IS A PDF BY VERIFYING ITS MIMETYPE.
+      if (file.mimetype !&#x3D; &#x27;application/pdf&#x27;) {
+        // THROW A BADREQUESTEXCEPTION IF THE FILE IS NOT A PDF.
+        throw new BadRequestException(&#x60;Check your file ${file.originalname}&#x60;);
+      }
+
+      // CHECK IF A RESUME WITH THE SAME FILE NAME ALREADY EXISTS FOR THE USER.
+      const res &#x3D; await this.prisma.resume.findFirst({
+        where: {
+          ownerId: user.id,
+          resumeUrl:
+            &#x27;https://cc-dev-storage.fra1.digitaloceanspaces.com/TIPPJOB/&#x27; +
+            file.originalname,
+        },
+      });
+
+      // IF A RESUME WITH THE SAME FILE NAME DOES NOT EXIST, CREATE A NEW RESUME AND ADD IT TO THE ARRAY OF UPLOADED RESUMES.
+      if (!res) {
+        const resume &#x3D; await this.resumeService.createResume(file, user);
+        arrayOfUploadedResumes.push(resume);
+      }
+      // IF A RESUME WITH THE SAME FILE NAME EXISTS, ADD IT TO THE ARRAY OF UPLOADED RESUMES.
+      else {
+        arrayOfUploadedResumes.push(res);
+      }
+    }
+
+    // DELETE ANY EXISTING RESUMES FOR THE USER THAT WERE NOT UPLOADED IN THIS BATCH.
+    await this.resumeService.deleteResumes(
+      arrayOfUploadedResumes.map((resume) &#x3D;&gt; resume.id),
+      user.id,
+    );
+
+    // RETURN THE ARRAY OF UPLOADED RESUMES.
+    return arrayOfUploadedResumes;
+  }
+
+  //SERVICE TO GET ALL USER RESUMES
+  async getUserResumes(user: User): Promise&lt;Resume[]&gt; {
+    return await this.resumeService.getUserResumes(user);
+  }
+
+  //SERVICE TO GET ALL USER RESUMES BY ID
+  async getUserResumeById(user: User, id: string): Promise&lt;Resume[] | null&gt; {
+    if (!id) {
+      return null;
+    }
+    //GET THE CURRENT USER (JWT USER)
+    const currentUser &#x3D; await this.prisma.user.findUnique({
+      where: { id: user.id },
+    });
+    if (!currentUser) {
+      throw new UnauthorizedException(&#x27;Unauthorized&#x27;);
+    }
+    //GET THE USER BASE ON THE ID PATH PARAM
+    const dbUser &#x3D; await this.prisma.user.findUnique({
+      where: {
+        id: id,
+      },
+      include: {
+        profile: {
+          include: {
+            activity: true,
+          },
+        },
+      },
+    });
+    if (dbUser) {
+      if (dbUser.uploadsVisibility &#x3D;&#x3D; &#x27;PUBLIC&#x27;) {
+        return await this.resumeService.getUserResumes(dbUser);
+      }
+      if (
+        dbUser.uploadsVisibility &#x3D;&#x3D; &#x27;COMPANY&#x27; &amp;&amp;
+        currentUser?.userType &#x3D;&#x3D; &#x27;COMPANY&#x27;
+      ) {
+        return await this.resumeService.getUserResumes(dbUser);
+      }
+    }
+    return null;
+  }
+
+  //SERVICE TO SET USER ACTIVITY
+  async setUserActivity(user: User, CreateActivityDto: CreateActivityDto) {
+    const profile &#x3D; await this.prisma.profile.findUnique({
+      where: {
+        userId: user.id,
+      },
+    });
+    if (profile) {
+      return await this.activityService.upsertActivity(
+        profile,
+        CreateActivityDto,
+      );
+    } else {
+      return await this.activityService.createActivity(user, CreateActivityDto);
+    }
+  }
+  //SERVICE TO SET USER BIO
+  async setUserBio(user: User, createBioDto: CreateBioDto) {
+    return await this.prisma.profile.upsert({
+      where: {
+        userId: user.id,
+      },
+      create: {
+        bio: createBioDto.bio,
+        user: {
+          connect: {
+            id: user.id,
+          },
+        },
+      },
+      update: {
+        bio: createBioDto.bio,
+      },
+    });
+  }
+
+  //SERVICE TO SET USER TAGS
+  async setUserTags(user: User, body: CreateTagsDto) {
+    const values &#x3D; Object.values(body);
+    if (new Set(values).size !&#x3D;&#x3D; values.length) {
+      throw new BadRequestException(&#x27;Body contains duplicate values&#x27;);
+    }
+
+    body.tag_1 &#x3D; body.tag_1 || null;
+    body.tag_2 &#x3D; body.tag_2 || null;
+    body.tag_3 &#x3D; body.tag_3 || null;
+
+    await this.prisma.profile.upsert({
+      where: {
+        userId: user.id,
+      },
+      update: {
+        tag_1: body.tag_1,
+        tag_2: body.tag_2,
+        tag_3: body.tag_3,
+      },
+      create: {
+        user: {
+          connect: {
+            id: user.id,
+          },
+        },
+        tag_1: body.tag_1,
+        tag_2: body.tag_2,
+        tag_3: body.tag_3,
+      },
+    });
+    return { message: &#x27;Tag(s) set successfully&#x27; };
+  }
+  //SERVICE TO SET USER PROFOCUS
+  async setProFocus(
+    user: User,
+    createProFocus: CreateProFocusDto,
+  ): Promise&lt;string[] | undefined&gt; {
+    const profile &#x3D; await this.prisma.profile.upsert({
+      where: {
+        userId: user.id,
+      },
+      create: {
+        proFocus: createProFocus.proFocusArray.join(&#x27;,&#x27;),
+        user: {
+          connect: {
+            id: user.id,
+          },
+        },
+      },
+      update: {
+        proFocus: createProFocus.proFocusArray.join(&#x27;,&#x27;),
+      },
+    });
+    return profile?.proFocus?.split(&#x27;,&#x27;);
+  }
+  async getProFocus(user: User): Promise&lt;string[]&gt; {
+    const profile &#x3D; await this.prisma.profile.findFirst({
+      where: {
+        userId: user.id,
+      },
+    });
+    if (profile?.proFocus) return profile.proFocus.split(&#x27;,&#x27;);
+    else return [];
+  }
+  //SERVICE TO SET THE USER AS DELETED
+  async deleteUser(user: User) {
+    //delete the user compeletely
+    await this.prisma.user.delete({
+      where: {
+        id: user.id,
+      },
+    });
+    return { message: &#x27;User Deleted&#x27; };
+  }
+
+  //SERVICE TO BOOKMARK USER PROFILE
+  async bookmarkProfile(user: User, bookmarkProfileDto: BookmarkProfileDto) {
+    const mark &#x3D; await this.prisma.profileBookmarks.findFirst({
+      where: {
+        bookmarkedUserId: bookmarkProfileDto.bookmarkedUserId,
+        bookmarkingUserId: user.id,
+      },
+    });
+    if (mark) {
+      await this.prisma.profileBookmarks.delete({
+        where: {
+          bookmarkingUserId_bookmarkedUserId: {
+            bookmarkingUserId: user.id,
+            bookmarkedUserId: bookmarkProfileDto.bookmarkedUserId,
+          },
+        },
+      });
+      return { message: &#x27;Profile Unbookmarked&#x27; };
+    }
+
+    await this.prisma.profileBookmarks.create({
+      data: {
+        bookmarkingUserId: user.id,
+        bookmarkedUserId: bookmarkProfileDto.bookmarkedUserId,
+      },
+    });
+    return { message: &#x27;Profile Bookmarked&#x27; };
+  }
+
+  //SERVICE TO GET BOOKMARKED PROFILES
+  async getBookmarkedProfiles(user: User, take?: number, skip?: number) {
+    const [bookmarks, totalCount] &#x3D; await Promise.all([
+      this.prisma.profileBookmarks.findMany({
+        where: {
+          bookmarkingUserId: user.id,
+        },
+        include: {
+          bookmarkedUser: {
+            include: {
+              profile: true,
+            },
+          },
+        },
+        take,
+        skip,
+      }),
+
+      this.prisma.profileBookmarks.count({
+        where: {
+          bookmarkingUserId: user.id,
+        },
+      }),
+    ]);
+    return {
+      totalCount,
+      bookmarks,
+    };
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProfileService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

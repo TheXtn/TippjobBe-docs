@@ -1,0 +1,597 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>server documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">server documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Miscellaneous</li>
+  <li class="breadcrumb-item">Variables</li>
+</ol>
+
+<section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#AllowedFileTypes" title="src/messenger/types/allowedFileTypes.ts" ><b>AllowedFileTypes</b>&nbsp;&nbsp;&nbsp;(src/.../allowedFileTypes.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#CurrentUser" title="src/auth/decorators/current-user.decorator.ts" ><b>CurrentUser</b>&nbsp;&nbsp;&nbsp;(src/.../current-user.decorator.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#DoSpacesServiceLib" title="src/digitalocean-filer/digitalocean-filer.config.ts" ><b>DoSpacesServiceLib</b>&nbsp;&nbsp;&nbsp;(src/.../digitalocean-filer.config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#DoSpacesServiceProvider" title="src/digitalocean-filer/digitalocean-filer.config.ts" ><b>DoSpacesServiceProvider</b>&nbsp;&nbsp;&nbsp;(src/.../digitalocean-filer.config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#extraModels" title="src/_gen/prisma-class/index.ts" ><b>extraModels</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#imageFileFilter" title="src/profile/filters/image-file.filter.ts" ><b>imageFileFilter</b>&nbsp;&nbsp;&nbsp;(src/.../image-file.filter.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#newrelic" title="src/newrelic/newrelic.interceptor.ts" ><b>newrelic</b>&nbsp;&nbsp;&nbsp;(src/.../newrelic.interceptor.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#S3" title="src/digitalocean-filer/digitalocean-filer.config.ts" ><b>S3</b>&nbsp;&nbsp;&nbsp;(src/.../digitalocean-filer.config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SALT" title="src/auth/utils/bcrypt.ts" ><b>SALT</b>&nbsp;&nbsp;&nbsp;(src/.../bcrypt.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#spacesEndpoint" title="src/digitalocean-filer/digitalocean-filer.config.ts" ><b>spacesEndpoint</b>&nbsp;&nbsp;&nbsp;(src/.../digitalocean-filer.config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#uploadFile" title="src/profile/decorators/upload-file.decorator.ts" ><b>uploadFile</b>&nbsp;&nbsp;&nbsp;(src/.../upload-file.decorator.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#uploadFile2" title="src/profile/decorators/upload-file.decorator.ts" ><b>uploadFile2</b>&nbsp;&nbsp;&nbsp;(src/.../upload-file.decorator.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#util" title="src/newrelic/newrelic.interceptor.ts" ><b>util</b>&nbsp;&nbsp;&nbsp;(src/.../newrelic.interceptor.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>src/messenger/types/allowedFileTypes.ts</h3>
+    <section data-compodoc="block-properties">
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="AllowedFileTypes"></a>
+                    <span class="name">
+                        <span ><b>AllowedFileTypes</b></span>
+                        <a href="#AllowedFileTypes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    &#x27;application/pdf&#x27;,
+    &#x27;application/msword&#x27;,
+    &#x27;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#x27;,
+    &#x27;application/vnd.ms-excel&#x27;,
+    &#x27;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&#x27;,
+    &#x27;application/vnd.ms-powerpoint&#x27;,
+    &#x27;application/vnd.openxmlformats-officedocument.presentationml.presentation&#x27;,
+    &#x27;text/plain&#x27;,
+    &#x27;image/jpeg&#x27;,
+    &#x27;image/webp&#x27;,
+    &#x27;image/tiff&#x27;,
+    &#x27;image/png&#x27;,
+    &#x27;image/gif&#x27;,
+    &#x27;image/bmp&#x27;,
+    &#x27;image/svg+xml&#x27;,
+    &#x27;image/heic&#x27;,
+    &#x27;audio/mpeg&#x27;,
+    &#x27;audio/wav&#x27;,
+    &#x27;audio/ogg&#x27;,
+    &#x27;audio/midi&#x27;,
+    &#x27;video/mp4&#x27;,
+    &#x27;video/x-msvideo&#x27;,
+    &#x27;video/x-matroska&#x27;,
+    &#x27;video/quicktime&#x27;,
+    &#x27;application/zip&#x27;,
+    &#x27;application/x-rar-compressed&#x27;,
+    &#x27;application/x-7z-compressed&#x27;,
+    &#x27;application/x-tar&#x27;,
+    &#x27;application/javascript&#x27;,
+    &#x27;application/typescript&#x27;,
+    &#x27;application/x-python-code&#x27;,
+    &#x27;application/xml&#x27;,
+    &#x27;application/json&#x27;,
+    &#x27;text/csv&#x27;,
+    &#x27;application/sql&#x27;,
+    &#x27;text/markdown&#x27;,
+    &#x27;text/html&#x27;,
+    &#x27;text/css&#x27;,
+  ]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/auth/decorators/current-user.decorator.ts</h3>
+    <section data-compodoc="block-properties">
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CurrentUser"></a>
+                    <span class="name">
+                        <span ><b>CurrentUser</b></span>
+                        <a href="#CurrentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>createParamDecorator(
+  (data: unknown, ctx: ExecutionContext) &#x3D;&gt; {
+    const request &#x3D; ctx.switchToHttp().getRequest();
+    return request.user;
+  },
+)</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/digitalocean-filer/digitalocean-filer.config.ts</h3>
+    <section data-compodoc="block-properties">
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DoSpacesServiceLib"></a>
+                    <span class="name">
+                        <span ><b>DoSpacesServiceLib</b></span>
+                        <a href="#DoSpacesServiceLib"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;lib:do-spaces-service&#x27;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DoSpacesServiceProvider"></a>
+                    <span class="name">
+                        <span ><b>DoSpacesServiceProvider</b></span>
+                        <a href="#DoSpacesServiceProvider"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/variables.html#S3" target="_self" >Provider&lt;AWS.S3&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+  provide: DoSpacesServiceLib,
+  useValue: S3,
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="S3"></a>
+                    <span class="name">
+                        <span ><b>S3</b></span>
+                        <a href="#S3"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new AWS.S3({
+  endpoint: spacesEndpoint.href,
+  credentials: new AWS.Credentials({
+    accessKeyId: process.env.DIGITAL_OCEAN_SPACES_KEY || &#x27;&#x27;,
+    secretAccessKey: process.env.DIGITAL_OCEAN_SPACES_SECRET || &#x27;&#x27;,
+  }),
+})</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="spacesEndpoint"></a>
+                    <span class="name">
+                        <span ><b>spacesEndpoint</b></span>
+                        <a href="#spacesEndpoint"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new AWS.Endpoint(&#x27;fra1.digitaloceanspaces.com&#x27;)</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/_gen/prisma-class/index.ts</h3>
+    <section data-compodoc="block-properties">
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extraModels"></a>
+                    <span class="name">
+                        <span ><b>extraModels</b></span>
+                        <a href="#extraModels"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    User,
+    Conversation,
+    Message,
+    Bookmarks,
+    ProfileBookmarks,
+    Profile,
+    Activity,
+    Image,
+    Resume,
+    EmailVerification,
+    EmailChange,
+    ResetPassword,
+    RefreshToken,
+    Post,
+    PostExtra,
+  ]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/profile/filters/image-file.filter.ts</h3>
+    <section data-compodoc="block-properties">
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="imageFileFilter"></a>
+                    <span class="name">
+                        <span ><b>imageFileFilter</b></span>
+                        <a href="#imageFileFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(
+  req: Request,
+  file: Express.Multer.File,
+  cb: (error: MulterError | null, check: boolean) &#x3D;&gt; void,
+) &#x3D;&gt; {
+  if (file.originalname.match(/^.*\.(jpg|webp|png|jpeg)$/)) cb(null, true);
+  else {
+    cb(new MulterError(&#x27;LIMIT_UNEXPECTED_FILE&#x27;, &#x27;image&#x27;), false);
+  }
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/newrelic/newrelic.interceptor.ts</h3>
+    <section data-compodoc="block-properties">
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newrelic"></a>
+                    <span class="name">
+                        <span ><b>newrelic</b></span>
+                        <a href="#newrelic"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>require(&#x27;newrelic&#x27;)</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="util"></a>
+                    <span class="name">
+                        <span ><b>util</b></span>
+                        <a href="#util"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>require(&#x27;util&#x27;)</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/auth/utils/bcrypt.ts</h3>
+    <section data-compodoc="block-properties">
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SALT"></a>
+                    <span class="name">
+                        <span ><b>SALT</b></span>
+                        <a href="#SALT"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>10</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/profile/decorators/upload-file.decorator.ts</h3>
+    <section data-compodoc="block-properties">
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadFile"></a>
+                    <span class="name">
+                        <span ><b>uploadFile</b></span>
+                        <a href="#uploadFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(fileName &#x3D; &#x27;file&#x27;): MethodDecorator &#x3D;&gt;
+  (target: any, propertyKey, descriptor: PropertyDescriptor) &#x3D;&gt; {
+    ApiBody({
+      schema: {
+        type: &#x27;object&#x27;,
+        properties: {
+          [fileName]: {
+            type: &#x27;string&#x27;,
+            format: &#x27;binary&#x27;,
+          },
+        },
+      },
+    })(target, propertyKey, descriptor);
+  }</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadFile2"></a>
+                    <span class="name">
+                        <span ><b>uploadFile2</b></span>
+                        <a href="#uploadFile2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(fileNames: string[] &#x3D; [&#x27;file&#x27;]): MethodDecorator &#x3D;&gt;
+  (target: any, propertyKey, descriptor: PropertyDescriptor) &#x3D;&gt; {
+    interface StringIndexedObject&lt;T&gt; {
+      [key: string]: T;
+    }
+
+    const properties: StringIndexedObject&lt;{ type: string; format: string }&gt; &#x3D;
+      {};
+    for (const fileName of fileNames) {
+      properties[fileName] &#x3D; {
+        type: &#x27;string&#x27;,
+        format: &#x27;binary&#x27;,
+      };
+    }
+    ApiBody({
+      schema: {
+        type: &#x27;object&#x27;,
+        properties: {
+          ...properties,
+        },
+      },
+    })(target, propertyKey, descriptor);
+  }</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
